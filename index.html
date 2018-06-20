@@ -2,156 +2,267 @@
 <html lang='en'>
 
 <head>
-  <meta charset='UTF-8'>
-  <title>Introduction to HTML</title>
-  <link rel='stylesheet' href='style.css'>
+    <meta charset='UTF-8'>
+    <title>Introduction to HTML</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
-  <main id='main-doc'>
-  <!--The .main-section elements should contain at least 10 p elements total (not each).-->
-    <!--The .main-section elements should contain at least 5 code elements total (not each).-->
-    <!--The .main-section elements should contain at least 5 li items total (not each).-->
-    <nav>
-    <header>
-        <!--On regular sized devices (laptops, desktops), the element with id='navbar' should be shown on the left side of the screen and should always be visible to the user.-->
-        <h1>Introduction to HTML</h1>
-      </header>
-      <li class='nav-item'><a href='link' class='nav-link'>Introduction to HTML overview</a></li>
-      <li class='nav-item'><a href='link' class='nav-link'>NAME</a></li>
-    </nav>
-    <section id ='Introduction_to_HTML_overview' class='main-section'>
-      <header>
-          <h1>Introduction to HTML overview</h1>
-          <p></p>
-      </header>
-      <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Getting_started_with_HTML' class='main-section'>
-        <header>
-            <h1>Getting started with HTML</h1>
+    <main id='main-doc'>
+        <!--The .main-section elements should contain at least 5 code elements total (not each).-->
+        <nav>
+            <header>
+                <!--On regular sized devices (laptops, desktops), the element with id='navbar' should be shown on the left side of the screen and should always be visible to the user.-->
+                <h1>Introduction to HTML</h1>
+            </header>
+            <li class='nav-item'>
+                <a href='#Introduction_to_HTML_overview' class='nav-link'>Introduction to HTML overview</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Getting_started_with_HTML' class='nav-link'>Getting started with HTML</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Whats_in_the_head?_Metadata_in_HTML' class='nav-link'>What's in the head? Metadata in HTML</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#HTML_text_fundamentals' class='nav-link'>HTML text fundamentals</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Creating_hyperlinks' class='nav-link'>Creating hyperlinks</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Advanced_text_formatting' class='nav-link'>Advanced text formatting</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Document_and_website_structure' class='nav-link'>Document and website structure</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Debugging_HTML' class='nav-link'>Debugging HTML</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Assessment:_Marking_up_a_letter' class='nav-link'>Assessment: Marking up a letter</a>
+            </li>
+            <li class='nav-item'>
+                <a href='#Assessment:_Structuring_a_page_of_content' class='nav-link'>Assessment: Structuring a page of content</a>
+            </li>
+        </nav>
+        <section id='Introduction_to_HTML_overview' class='main-section'>
+            <header>
+                <h1>Introduction to HTML overview</h1>
+                <p class='overview'></p>
+            </header>
+            <hr>
+            <section class='sub-section'>
+                <h2>Prerequisites</h2>
+                <p>Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files). Both are parts of our Getting started with the web complete beginner's module.</p>
+                <h2>Guides</h2>
+                <p>This module contains the following articles, which will take you through all the basic theory of HTML and provide ample opportunity for you to test out some skills.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Getting started with HTML</a></h3>
+                <p>Covers the absolute basics of HTML, to get you started — we define elements, attributes, and other important terms, and show where they fit in the language. We also show how a typical HTML page is structured and how an HTML element is structured, and explain other important basic language features. Along the way, we'll play with some HTML to get you interested!</p>
+                <h3><a href='NEEDTOADDLINKHERE'>What’s in the head? Metadata in HTML</a></h3>
+                <p>The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <code>&lt;title&gt;</code>, links to CSS (if you want to style your HTML content with CSS), links to custom favicons, and metadata (data about the HTML, such as who wrote it, and important keywords that describe the document).</p>
+                <h3><a href='NEEDTOADDLINKHERE'>HTML text fundamentals</a></h3>
+                <p>One of HTML's main jobs is to give text meaning (also known as semantics), so that the browser knows how to display it correctly. This article looks at how to use HTML to break up a block of text into a structure of headings and paragraphs, add emphasis/importance to words, create lists, and more.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Creating hyperlinks</a></h3>
+                <p>Hyperlinks are really important — they are what makes the web a web. This article shows the syntax required to make a link, and discusses best practices for links.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Advanced text formatting</a></h3>
+                <p>There are many other elements in HTML for formatting text that we didn't get to in the HTML text fundamentals article. The elements in here are less well-known, but still useful to know about. In this article you'll learn about marking up quotations, description lists, computer code and other related text, subscript and superscript, contact information, and more.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Document and website structure</a></h3>
+                <p>As well as defining individual parts of your page (such as "a paragraph" or "an image"), HTML is also used to define areas of your website (such as "the header," "the navigation menu," or "the main content column.") This article looks into how to plan a basic website structure and how to write the HTML to represent this structure.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Debugging HTML</a></h3>
+                <p>Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article will introduce you to some tools that can help.</p>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2>Assessments</h2>
+                <p>The following assessments will test your understanding of the HTML basics covered in the guides above.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Marking up a letter</a></h3>
+                <p>We all learn to write a letter sooner or later; it is also a useful example to test out text formatting skills. In this assessment you'll be given a letter to mark up.</p>
+                <h3><a href='NEEDTOADDLINKHERE'>Structuring a page of content</a></h3>
+                <p>This assessment tests your ability to use HTML to structure a simple page of content, containing a header, a footer, a navigation menu, main content, and a sidebar.</p>
+            </section>
+            <hr>
+        </section>
+        <section id='Getting_started_with_HTML' class='main-section'>
+            <header>
+                <h1>Getting started with HTML</h1>
+                <p class='overview'>In this article we cover the absolute basics of HTML, to get you started. We define elements, attributes, and all the other important terms you may have heard, and where they fit into the language. We also show how an HTML element is structured, how a typical HTML page is structured, and explain other important basic language features. Along the way, we'll play with some HTML to get you interested!</p>
+            </header>
+            <hr>
+            <section class='sub-section'>
+                <h2>What is HTML?</h2>
+                <p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on.  For example, take the following line of content:</p>
+                <code>My cat is very grumpy</code>
+                <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph  (<code>&lt;p&gt;</code>) element:</p>
+                <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2>Anatomy of an HTML element</h2>
+                <p>Let's explore our paragraph element a bit further:</p>
+                <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+                <p>The main parts of our element are:</p>
+                <ol>
+                    <li><b>The opening tag:</b> This consists of the name of the element (in this case, p), wrapped in opening and closing <b>angle brackets</b>. This states where the element begins or starts to take effect — in this case where the start of the paragraph is.</li>
+                    <li><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</li>
+                    <li><b>The content:</b> This is the content of the element, which in this case is just text.</li>
+                    <li><b>The element:</b> The opening tag plus the closing tag plus the content equals the element.</li>
+                </ol>
+                <h3>Nesting elements</h3>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2></h2>
+                <p></p>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2></h2>
+                <p></p>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2></h2>
+                <p></p>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2></h2>
+                <p></p>
+            </section>
+            <hr>
+            <section class='sub-section'>
+                <h2></h2>
+                <p></p>
+            </section>
+            <hr>
+
+
+
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+        </section>
+        <section id='Whats_in_the_head?_Metadata_in_HTML' class='main-section'>
+            <!-- section id may not pass fcc check due to missing apostrophe for User Story #4-->
+            <header>
+                <h1>What's in the head? Metadata in HTML</h1>
+                <p class='overview'>At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these, and introduce fundamental concepts and syntax you need to know to understand HTML.</p>
+            </header>
+            <hr>
+            <h2></h2>
             <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Whats_in_the_head?_Metadata_in_HTML' class='main-section'> 
-      <!-- section id may not pass fcc check due to missing apostrophe for User Story #4-->
-        <header>
-            <h1>What's in the head? Metadata in HTML</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='HTML_text_fundamentals' class='main-section'>
+            <header>
+                <h1>HTML text fundamentals</h1>
+                <p class='overview'></p>
+            </header>
+            <hr>
+            <h2></h2>
             <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='HTML_text_fundamentals' class='main-section'>
-        <header>
-            <h1>HTML text fundamentals</h1>
+            <hr>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='Creating_hyperlinks' class='main-section'>
+            <header>
+                <h1>Creating hyperlinks</h1>
+                <p class='overview'></p>
+            </header>
+            <hr>
+            <h2></h2>
             <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Creating_hyperlinks' class='main-section'>
-        <header>
-            <h1>Creating hyperlinks</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='Advanced_text_formatting' class='main-section'>
+            <header>
+                <h1>Advanced text formatting</h1>
+                <p></p>
+            </header>
+            <hr>
+            <h2></h2>
+            <p class='overview'></p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='Document_and_website_structure' class='main-section'>
+            <header>
+                <h1>Document and website structure</h1>
+                <p></p>
+            </header>
+            <hr>
+            <h2></h2>
+            <p class='overview'></p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='Debugging_HTML' class='main-section'>
+            <header>
+                <h1>Debugging HTML</h1>
+                <p class='overview'></p>
+            </header>
+            <hr>
+            <h2></h2>
             <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Advanced_text_formatting' class='main-section'>
-        <header>
-            <h1>Advanced text formatting</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='Assessment:_Marking_up_a_letter' class='main-section'>
+            <header>
+                <h1>Assessment: Marking up a letter</h1>
+                <p class='overview'></p>
+            </header>
+            <hr>
+            <h2></h2>
             <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Document_and_website_structure' class='main-section'>
-        <header>
-            <h1>Document and website structure</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id='Assessment:_Structuring_a_page_of_content' class='main-section'>
+            <header>
+                <h1>Assessment: Structuring a page of content</h1>
+                <p class='overview'></p>
+            </header>
+            <hr>
+            <h2></h2>
             <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Debugging_HTML' class='main-section'>
-        <header>
-            <h1>Debugging HTML</h1>
-            <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Assessment:_Marking_up_a_letter' class='main-section'>
-        <header>
-            <h1>Assessment: Marking up a letter</h1>
-            <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-    <section id ='Assessment:_Structuring_a_page_of_content' class='main-section'>
-        <header>
-            <h1>Assessment: Structuring a page of content</h1>
-            <p></p>
-        </header>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </section>
-  </main>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
