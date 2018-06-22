@@ -72,8 +72,8 @@
                 </h3>
                 <p>Details on where the information on this page was sourced.</p>
             </section>
-            <hr>
         </section>
+        <hr>
         <section id='Getting_started_with_HTML' class='main-section'>
             <header>
                 <h1>Getting started with HTML</h1>
@@ -200,6 +200,7 @@
                 <p>However if you want to include a quote within the quotes where both the quotes are of the same type(single quote or double quote), you'll have to use HTML entities for the quotes.</p>
             </section>
         </section>
+        <hr>
         <section id='What_is_in_the_head?_Metadata_in_HTML' class='main-section'>
             <!-- section id may not pass fcc check due to missing apostrophe for User Story #4-->
             <header>
@@ -212,29 +213,94 @@
                     HTML.</p>
             </header>
             <hr>
-            <h2></h2>
-            <p></p>
+            <h2>What is the HTML head?</h2>
+            <p>Let's revisit the simple HTML document we covered in the previous article:</p>
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My test page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is my page&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+            <p>The HTML head is the contents of the <code>&lt;head&gt;</code> element — unlike the contents of the <code>&lt;body&gt;</code> element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. In the above example, the head is quite small:</p>
+            <pre>
+                    <code>
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My test page&lt;/title&gt;
+&lt;/head&gt;
+                    </code>
+                </pre>
+            <p>In larger pages however, the head can get quite full.  Try going to some of your favorite websites and use the developer tools to check out their head contents. Our aim here is not to show you how to use everything that can possibly be put in the head, but rather to teach you how to use the major elements that you'll want to include in the head, and give you some familiarity. Let's get started.</p>
+            <hr>
+            <h2>Adding a title</h2>
+            <p>We've already seen the <code>&lt;title&gt;</code> element in action — this can be used to add a title to the document. This however can get confused with the <code>&lt;h1&gt;</code> element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The <code>&lt;h1&gt;</code> element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.)</li>
+                <li>The <code>&lt;title&gt;</code> element is metadata that represents the title of the overall HTML document (not the document's content.)</li>
             </ul>
         </section>
+        <hr>
         <section id='HTML_text_fundamentals' class='main-section'>
             <header>
                 <h1>HTML text fundamentals</h1>
-                <p class='overview'></p>
+                <p class='overview'>One of HTML's main jobs is to give text structure and meaning (also known as semantics) so that a browser can display it correctly. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
             </header>
             <hr>
-            <h2></h2>
-            <p></p>
-            <hr>
+            <h2>The basics: Headings and Paragraphs</h2>
+            <p>Most structured text is comprised of headings and paragraphs, irrespective of whether you are reading a story, a newspaper, a college textbook, a magazine, etc. Structured content makes the reading experience easier and more enjoyable.</p>
+            <p>In HTML, each paragraph has to be wrapped in a <code>&lt;p&gt;</code> element, like so:</p>
+            <code>&lt;p&gt;I am a paragraph, oh yes I am.&lt;/p&gt;</code>
+            <p>Each heading has to be wrapped in a heading element:</p>
+            <code>&lt;h1&gt;I am the title of the story.&lt;/h1&gt;</code>
+            <p>There are six heading elements — <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, and <code>&lt;h6&gt;</code>. Each element represents a different level of content in the document; <code>&lt;h1&gt;</code> represents the main heading, <code>&lt;h2&gt;</code> represents subheadings, <code>&lt;h3&gt;</code> represents sub-subheadings, and so on.</p>
+            <h3>Implementing structural hierarchy</h3>
+            <p>As an example, in a story, <code>&lt;h1&gt;</code> would represent the title of the story, <code>&lt;h2&gt;</code>s would represent the title of each chapter and <code>&lt;h3&gt;</code>s would represent sub-sections of each chapter, and so on.</p>
+            <pre>
+                <code>
+&lt;h1&gt;The Crushing Bore&lt;/h1&gt;
+
+&lt;p&gt;By Chris Mills&lt;/p&gt;
+
+&lt;h2&gt;Chapter 1: The dark night&lt;/h2&gt;
+
+&lt;p&gt;It was a dark night. Somewhere, an owl hooted. The rain lashed down on the ...&lt;/p&gt;
+
+&lt;h2&gt;Chapter 2: The eternal silence&lt;/h2&gt;
+
+&lt;p&gt;Our protagonist could not so much as a whisper out of the shadowy figure ...&lt;/p&gt;
+
+&lt;h3&gt;The specter speaks&lt;/h3&gt;
+
+&lt;p&gt;Several more hours had passed, when all of a sudden the specter sat bolt upright and exclaimed, "Please have mercy on my soul!"&lt;/p&gt;                    
+                </code>
+            </pre>
+            <p>It's really up to you what exactly the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                    <li>Preferably you should just use a single <code>&lt;h1&gt;</code> per page — this is the top level heading, and all others sit below this in the hierarchy.</li>
+                    <li>Make sure you use the headings in the correct order in the hierarchy. Don't use <code>&lt;h3&gt;</code>s to represent subheadings, followed by <code>&lt;h2&gt;</code>s to represent sub-subheadings — that doesn't make sense and will lead to weird results.</li>
+                    <li>Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (i.e. a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</li>
             </ul>
+            <h3>Why do we need structure?</h3>
+            <p>To answer this question, let's take a look at text-start.html — the starting point of our running example for this article (a nice hummus recipe.) You should save a copy of this file on your local machine, as you'll need it for the exercises later on. This document's body currently contains multiple pieces of content — they aren't marked up in any way, but they are separated with linebreaks (Enter/Return pressed to go onto the next line.)</p>
+            <p>However, when you open the document in your browser, you'll see that the text appears as a big chunk!</p>
+            <p>This is because there are no elements to give the content structure, so the browser does not know what is a heading and what is a paragraph. Furthermore:</p>
+            <ul>
+                <li>Users looking at a web page tend to scan quickly to find relevant content, often just reading the headings to begin with (we usually spend a very short time on a web page). If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.</li>
+                <li>Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO (Search Engine Optimization).</li>
+                <li>Severely visually impaired people often don't read web pages; they listen to them instead. This is done with software called a screen reader. This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to find the information they need quickly. If headings are not available, they will be forced to listen to the whole document read out loud.</li>
+                <li>To style content with CSS, or make it do interesting things with JavaScript, you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.</li>
+            </ul>
+            <p>We therefore need to give our content structural markup.</p>
         </section>
+        <hr>
         <section id='Reference' class='main-section'>
             <header>
                 <h1>Reference</h1>
