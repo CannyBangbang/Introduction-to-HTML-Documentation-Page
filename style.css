@@ -1,26 +1,65 @@
 @media screen and (max-width: 767px) {
-    body {
-        font-size: 1.2em;
-    }
+
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    body {
-        font-size: 1.2em;
+@media screen and (min-width: 768px) {
+
+    #navbar {
+        float: left;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        width: 330px;
     }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-    body {
-        font-size: 1.2em;
-    }
-}
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.2em;
-    }
+    #main-content{
+        position: absolute;
+        margin-left:550px;
+        margin-right: 200px;
+      }
 }
 body {
-    margin: 30px;
-    font-family: "Yantramanav", sans-serif;
+    min-width:330px;
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
     color: #000000;
-    background-color: #a09e9e;
+    background-color: #ffffff;
   }
+#navbar {
+    background-color: #ffffff;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: #babafd;
+}
+#navbar > li{
+    background-color: #ffffff;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #babafd;
+    list-style: none;
+    padding: 10px 0 10px 0;
+}
+h1 {
+    background-color: #babafd;
+    font-family: 'Allerta', sans-serif;
+    font-size: 2em;
+    padding: 7px;
+}
+h2 {
+    font-family: 'Allerta', sans-serif;
+    font-size: 1.5em;
+}
+h3 {
+    font-family: 'Allerta', sans-serif;
+    font-size: 1.2em;
+}
+code {
+    background-color: #ebe9e9; 
+    display: inline-block;
+    font-size: 1.1em;
+}
+.code-block {
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: #babafd;
+    padding-left: 5px;
+}
